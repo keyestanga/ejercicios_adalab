@@ -1,0 +1,12 @@
+*{
+  box-sizing: border-box;
+}
+
+.div1{
+  height: 100px;
+  width: 100%;
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+
+}
