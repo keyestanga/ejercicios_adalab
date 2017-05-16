@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercio de Repaso JS</title>
+  </head>
+  <body>
+    <h1>Ejercicio 1</h1>
+
+    <script type="text/javascript">
+
+      function cuentaNumeros(number, arrayNumbers) {
+        var repeticiones= 0;
+
+        for (var i=0; i<arrayNumbers.length; i=i+1){
+          if(arrayNumbers[i]=== number) {
+            repeticiones= repeticiones+1;
+          }
+        }
+        return repeticiones;
+      }
+
+      function miPrograma() {
+        var number = 2;
+        var arrayNumbers = [1, 2 , 5, 2, 8, 2, 9];
+        var totalRepeticiones= cuentaNumeros(number, arrayNumbers);
+
+        if(totalRepeticiones>0){
+          console.log("El número " + number + " se repetirá " + totalRepeticiones + " veces en este array.")
+        }else {
+          console.log("El número " + number + " no está en el array.")
+        }
+      }
+
+
+      miPrograma();
+
+
+
+
+
+
+
+      var number = 2;
+      var arrayNumbers = [1, 2 , 5, 2, 8, 2, 9];
+
+
+
+
+    </script>
+
+  </body>
+</html>
