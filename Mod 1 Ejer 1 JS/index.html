@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1 JS </title>
+  </head>
+  <body>
+    <h1>Años bisiestos hasta el 2050</h1>
+
+    <script type="text/javascript">
+    var currentYear = 2017;
+    var finalYear = 2050;
+    var interval = 4;
+
+    var pastLeapYear = currentYear - currentYear % interval;
+    var yearSought = finalYear - finalYear % interval;
+    var result = (yearSought - pastLeapYear) / interval;
+
+    console.log("Habrá " + result + " años bisiestos hasta el 2050");
+    </script>
+
+    <h2>Cartas pares y negras en una baraja de poker</h2>
+
+    <script type="text/javascript">
+    var totalCards = 50;
+    var numStick = 4;
+    var stickBlack = 2;
+
+    var blackCards = (totalCards - totalCards % numStick)/2;
+    var cPeersBlack = blackCards/ stickBlack;
+
+    console.log("Hay " + cPeersBlack + " cartas pares y negras en una baraja de póker");
+
+    </script>
+
+
+  </body>
+</html>
