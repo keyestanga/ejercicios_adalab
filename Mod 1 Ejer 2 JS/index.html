@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicios 2 y 3 JS</title>
+  </head>
+  <body>
+
+    <h1>Tres cartas consecutivas</h1>
+
+    <script type="text/javascript">
+    //Define una variable cuyo valor sea una cadena que represente una carta de la baraja.
+
+    var  card = "4c";
+    var cardNumber = card[0];
+    var cardStick = card[1];
+    //Ahora crea otras dos variables que representan a la carta anterior y a las carta posterior en una baraja ordenada.
+    var cardBefore = cardNumber - 1 + cardStick;
+    var cardAfter = +cardNumber + 1 + cardStick;
+    //Finalmente, crea una última variable que concatene las cadenas de las 3 cartas anteriores usando las variables que ya tienes.
+    var result = cardBefore + " " + card + " " + cardAfter;
+
+    console.log(result);
+
+
+    //Define una variable cuyo valor sea una cadena que represente una carta de la baraja, cuyo valor sea mayor que 9.
+    var card = "10d";
+    console.log(card [card.length-1]);
+    //Ahora utiliza el operador para indexar la cadena, y accede al palo de la carta.
+    //¿Cuál es la diferencia si la carta tiene un valor menor o igual que 9?
+
+    </script>
+
+
+
+  </body>
+</html>
