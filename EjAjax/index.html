@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Ejercicio AJAX</title>
+    <link rel="stylesheet" href="style/index.css">
   </head>
   <body>
     <h1>Buscador de ususarios en GitHub</h1>
 
     <form class="" action="index.html" method="post">
-      <input type="text" id="" placeholder="Introduce tu usuario" maxlength="15">
-      <button type="button" id="btn">Buscar</button>
+      <input class="" type="text" id="userId" placeholder="Introduce tu usuario" maxlength="15">
+      <button class="btn" type="button" id="btn">Buscar</button>
     </form>
 
     <h2>Resultados</h2>
 
-    <span>Nombre:</span><span id="name"></span>
+    <p class="">Nombre:</p><span id="name"></span>
+    <p class="">Foto:</p><img id="picture">
+    <p class="">Número de repositorios:</p><span id="num"></span>
 
 
+   <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
