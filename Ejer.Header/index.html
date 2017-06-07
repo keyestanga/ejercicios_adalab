@@ -4,20 +4,17 @@
   <meta charset="utf-8">
   <title>Header responsive</title>
   <meta name="viewport" width="device-width">
-  <link rel="icon" href="image/icon-menu.png">
-  <link rel="stylesheet" href="CSS/style.css">
-  <script src="main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
 
   <header class="header">
-
     <div class="header-content">
-      <a href="#">
-        <img src="images/logo-mani-domic.png" alt="Logotipo">
+      <a class="brand-link" href="#">
+        <img class="brand" src="images/logo-mani-domic.png" alt="Logotipo">
       </a>
 
-      <button class="btn-menu" type="button" name="button">
+      <button class="btn-menu" type="button" name="button" id="js-button-burguer">
         <img class="btn-menu-icon"src="images/icon-menu.png" alt="Icono botón menú">
       </button>
 
@@ -29,14 +26,18 @@
       </ul>
     </div>
 
-    <ul class="nav-small">
-      <li class="nav-small-item"><a class="nav-small-link" href="#">Inicio</a></li>
-      <li class="nav-small-item"><a class="nav-small-link" href="#">Servicios</a></li>
-      <li class="nav-small-item"><a class="nav-small-link" href="#">Consejos para ti</a></li>
-      <li class="nav-small-item"><a class="nav-small-link" href="#">Contacto</a></li>
-    </ul>
+    <div class="menuList">
+      <ul class="nav-small" id="js-menu-small">
+        <li class="nav-small-item"><a class="nav-small-link" href="#">Inicio</a></li>
+        <li class="nav-small-item"><a class="nav-small-link" href="#">Servicios</a></li>
+        <li class="nav-small-item"><a class="nav-small-link" href="#">Consejos para ti</a></li>
+        <li class="nav-small-item"><a class="nav-small-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+
 
   </header>
 
+  <script type="text/javascript" src="main.js" ></script>
 </body>
 </html>
